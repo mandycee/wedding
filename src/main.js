@@ -2,7 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import Home from '@/components/Home/Home';
 import Wedding from '@/components/BigDay/Wedding';
-import Accommodations from '@/components/Accommodations';
+import Accommodations from '@/components/Stay/Accommodations';
 import Gift from '@/components/Gift';
 import VueRouter from 'vue-router';
 

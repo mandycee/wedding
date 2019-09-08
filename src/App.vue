@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar :style="[toggleBackground, toggleColor]" />
     <router-view></router-view>
     <Footer />
   </div>

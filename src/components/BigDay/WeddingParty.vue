@@ -56,7 +56,7 @@
       </div>
       <div class="thumbnail">
         <div>
-          <img src alt />
+          <img src="../../assets/weddingPartyImages/roy.jpg" alt />
         </div>
         <p class="party_type">Best Man</p>
         <p>Roy</p>

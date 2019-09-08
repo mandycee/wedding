@@ -28,38 +28,57 @@ export default {
     return {
       toggleBackground: {},
       toggleColor: {},
+      test: null,
     };
   },
   watch: {
     $route() {
-      if (this.$route.path !== '/') {
-        this.toggleBackground = {
-          backgroundColor: 'rgba(42, 76, 131)',
-        };
-        this.toggleColor = {
-          color: '#fff',
-        };
-      } else {
+      if (this.$route.path === '/') {
         this.toggleBackground = {
           backgroundColor: 'rgba(255, 255, 255, 0)',
         };
         this.toggleColor = {
           color: 'black',
         };
+      } else if (this.$route.path !== '/') {
+        this.toggleBackground = {
+          backgroundColor: 'rgba(42, 76, 131)',
+        };
+        this.toggleColor = {
+          color: '#fff',
+        };
       }
     },
+  },
+  created() {
+    if (this.$route.path === '/') {
+      this.toggleBackground = {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+      };
+      this.toggleColor = {
+        color: 'black',
+      };
+    } else if (this.$route.path !== '/') {
+      this.toggleBackground = {
+        backgroundColor: 'rgba(42, 76, 131)',
+      };
+      this.toggleColor = {
+        color: '#fff',
+      };
+    }
   },
   methods: {
     onScroll() {
       if (window.location.pathname === '/') {
-        if (window.scrollY >= 506) {
+        if (window.scrollY >= 700) {
           this.toggleBackground = {
             backgroundColor: 'rgba(42, 76, 131)',
+            // transition: 'all 0.4s',
           };
           this.toggleColor = {
             color: '#fff',
           };
-        } else if (window.scrollY < 506) {
+        } else if (window.scrollY < 700) {
           this.toggleBackground = {
             backgroundColor: 'rgba(255, 255, 255, 0)',
           };
@@ -83,7 +102,8 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 10;
-  background-color: rgba(42, 76, 131);
+  transition: all 0.4s;
+  /* background-color: rgba(255, 255, 255, 0); */
 }
 
 nav {
@@ -111,7 +131,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  /* color: #000; */
 }
 
 .am-special {
