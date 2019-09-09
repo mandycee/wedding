@@ -1,6 +1,6 @@
 <template>
   <header v-scroll="onScroll" v-bind:style="toggleBackground">
-    <nav>
+    <nav v-if="!mobile" class="desktop">
       <ul>
         <li>
           <router-link to="/" v-bind:style="toggleColor">Our Story</router-link>
@@ -19,20 +19,75 @@
         </li>
       </ul>
     </nav>
+
+    <Slide v-if="mobile" class="slide_menu">
+      <ul>
+        <li class="am-special">
+          <router-link to="/">Amanda & Miguel</router-link>
+        </li>
+        <li>
+          <router-link to="/">Our Story</router-link>
+        </li>
+        <li>
+          <router-link to="/wedding">The Big Day</router-link>
+        </li>
+        <li>
+          <router-link to="/stay">Accommodation</router-link>
+        </li>
+        <li>
+          <router-link to="/gift">Gifts</router-link>
+        </li>
+      </ul>
+    </Slide>
   </header>
 </template>
 
 <script>
+import { Slide } from 'vue-burger-menu';
 export default {
+  components: {
+    Slide,
+  },
   data() {
     return {
+      mobile: false,
       toggleBackground: {},
       toggleColor: {},
-      test: null,
     };
   },
   watch: {
     $route() {
+      if (!this.mobile) {
+        if (this.$route.path === '/') {
+          this.toggleBackground = {
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+          };
+          this.toggleColor = {
+            color: 'rgb(30, 32, 58)',
+          };
+        } else if (this.$route.path === '/stay') {
+          this.toggleBackground = {
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+          };
+          this.toggleColor = {
+            color: '#fff',
+          };
+        } else {
+          this.toggleBackground = {
+            backgroundColor: 'rgb(30, 32, 58)',
+          };
+          this.toggleColor = {
+            color: '#fff',
+          };
+        }
+      }
+    },
+  },
+  created() {
+    this.setBurgerMenu();
+    window.addEventListener('resize', this.debounce(300, this.setBurgerMenu));
+
+    if (!this.mobile) {
       if (this.$route.path === '/') {
         this.toggleBackground = {
           backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -55,35 +110,17 @@ export default {
           color: '#fff',
         };
       }
-    },
-  },
-  created() {
-    if (this.$route.path === '/') {
-      this.toggleBackground = {
-        backgroundColor: 'rgba(255, 255, 255, 0)',
-      };
-      this.toggleColor = {
-        color: 'rgb(30, 32, 58)',
-      };
-    } else if (this.$route.path === '/stay') {
-      this.toggleBackground = {
-        backgroundColor: 'rgba(255, 255, 255, 0)',
-      };
-      this.toggleColor = {
-        color: '#fff',
-      };
-    } else {
-      this.toggleBackground = {
-        backgroundColor: 'rgb(30, 32, 58)',
-      };
-      this.toggleColor = {
-        color: '#fff',
-      };
     }
+  },
+  destroy() {
+    window.removeEventListener(
+      'resize',
+      this.debounce(300, this.setBurgerMenu)
+    );
   },
   methods: {
     onScroll() {
-      if (window.location.pathname === '/') {
+      if (window.location.pathname === '/' && !this.mobile) {
         if (window.scrollY >= 500) {
           this.toggleBackground = {
             backgroundColor: 'rgb(30, 32, 58)',
@@ -101,7 +138,7 @@ export default {
           };
         }
       }
-      if (window.location.pathname === '/stay') {
+      if (window.location.pathname === '/stay' && !this.mobile) {
         if (window.scrollY >= 50) {
           this.toggleBackground = {
             backgroundColor: 'rgb(30, 32, 58)',
@@ -119,11 +156,31 @@ export default {
         }
       }
     },
+    setBurgerMenu() {
+      if (window.innerWidth >= 1100) {
+        this.mobile = false;
+      }
+      if (window.innerWidth < 1100) {
+        this.mobile = true;
+      }
+    },
+    debounce(delay, fn) {
+      let timerId;
+      return function(...args) {
+        if (timerId) {
+          clearTimeout(timerId);
+        }
+        timerId = setTimeout(() => {
+          fn(...args);
+          timerId = null;
+        }, delay);
+      };
+    },
   },
 };
 </script>
 
-<style scoped>
+<style>
 header {
   position: fixed;
   top: 0;
@@ -134,7 +191,6 @@ header {
   align-items: center;
   z-index: 10;
   transition: all 0.4s;
-  /* background-color: rgba(255, 255, 255, 0); */
 }
 
 nav {
@@ -162,11 +218,51 @@ li {
 
 a {
   text-decoration: none;
-  /* color: #000; */
 }
 
 .am-special {
   font-size: 30px;
   flex: 3 1;
+}
+
+.slide_menu {
+  display: flex;
+  align-items: center;
+}
+
+.slide_menu .bm-menu {
+  background-color: rgb(30, 32, 58);
+}
+
+.slide_menu .bm-item-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.slide_menu ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  width: 100%;
+}
+
+.slide_menu ul li {
+  font-size: 18px;
+  margin: 12px;
+}
+
+.slide_menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.slide_menu .am-special {
+  font-size: 25px;
+  border-bottom: 2px solid #fff;
+  padding: 5px;
 }
 </style>
