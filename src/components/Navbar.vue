@@ -265,4 +265,23 @@ a {
   border-bottom: 2px solid #fff;
   padding: 5px;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1300px) {
+  ul {
+    width: 50%;
+  }
+  li {
+    font-size: 13px;
+  }
+  .am-special {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  ul {
+    width: 100%;
+  }
+}
 </style>
