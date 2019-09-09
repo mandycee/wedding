@@ -138,7 +138,7 @@ h3 {
   height: 400px;
   background: linear-gradient(
     to bottom,
-    rgb(223, 223, 223),
+    /* rgb(223, 223, 223), */ rgba(216, 209, 187, 0.52),
     rgba(42, 76, 131, 0.431)
   );
   display: flex;

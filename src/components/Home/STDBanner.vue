@@ -7,28 +7,22 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped>
 .save-the-date {
   height: 100vh;
+  padding: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-image: linear-gradient(
       to bottom,
-      rgba(211, 218, 255, 0.52),
-      rgba(75, 75, 75, 0.73)
+      rgba(216, 209, 187, 0.52),
+      rgba(42, 76, 131, 0.431)
     ),
     url('../../assets/us.jpg');
   background-size: cover;
+  background-position: top;
   color: rgb(30, 32, 58);
-}
-
-.save-the-date div {
-  margin-left: 750px;
 }
 
 .save-the-date h1 {
@@ -39,4 +33,6 @@ export default {};
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2em;
 }
+
+/* SCREENS */
 </style>

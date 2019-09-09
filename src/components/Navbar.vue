@@ -38,7 +38,7 @@ export default {
           backgroundColor: 'rgba(255, 255, 255, 0)',
         };
         this.toggleColor = {
-          color: 'black',
+          color: 'rgb(30, 32, 58)',
         };
       } else if (this.$route.path === '/stay') {
         this.toggleBackground = {
@@ -49,7 +49,7 @@ export default {
         };
       } else {
         this.toggleBackground = {
-          backgroundColor: 'rgba(42, 76, 131)',
+          backgroundColor: 'rgb(30, 32, 58)',
         };
         this.toggleColor = {
           color: '#fff',
@@ -63,7 +63,7 @@ export default {
         backgroundColor: 'rgba(255, 255, 255, 0)',
       };
       this.toggleColor = {
-        color: 'black',
+        color: 'rgb(30, 32, 58)',
       };
     } else if (this.$route.path === '/stay') {
       this.toggleBackground = {
@@ -74,7 +74,7 @@ export default {
       };
     } else {
       this.toggleBackground = {
-        backgroundColor: 'rgba(42, 76, 131)',
+        backgroundColor: 'rgb(30, 32, 58)',
       };
       this.toggleColor = {
         color: '#fff',
@@ -84,27 +84,27 @@ export default {
   methods: {
     onScroll() {
       if (window.location.pathname === '/') {
-        if (window.scrollY >= 700) {
+        if (window.scrollY >= 500) {
           this.toggleBackground = {
-            backgroundColor: 'rgba(42, 76, 131)',
+            backgroundColor: 'rgb(30, 32, 58)',
             // transition: 'all 0.4s',
           };
           this.toggleColor = {
             color: '#fff',
           };
-        } else if (window.scrollY < 700) {
+        } else if (window.scrollY < 500) {
           this.toggleBackground = {
             backgroundColor: 'rgba(255, 255, 255, 0)',
           };
           this.toggleColor = {
-            color: 'black',
+            color: 'rgb(30, 32, 58)',
           };
         }
       }
       if (window.location.pathname === '/stay') {
-        if (window.scrollY >= 500) {
+        if (window.scrollY >= 50) {
           this.toggleBackground = {
-            backgroundColor: 'rgba(42, 76, 131)',
+            backgroundColor: 'rgb(30, 32, 58)',
           };
           this.toggleColor = {
             color: '#fff',
