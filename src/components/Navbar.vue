@@ -40,7 +40,14 @@ export default {
         this.toggleColor = {
           color: 'black',
         };
-      } else if (this.$route.path !== '/') {
+      } else if (this.$route.path === '/stay') {
+        this.toggleBackground = {
+          backgroundColor: 'rgba(255, 255, 255, 0)',
+        };
+        this.toggleColor = {
+          color: '#fff',
+        };
+      } else {
         this.toggleBackground = {
           backgroundColor: 'rgba(42, 76, 131)',
         };
@@ -58,7 +65,14 @@ export default {
       this.toggleColor = {
         color: 'black',
       };
-    } else if (this.$route.path !== '/') {
+    } else if (this.$route.path === '/stay') {
+      this.toggleBackground = {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+      };
+      this.toggleColor = {
+        color: '#fff',
+      };
+    } else {
       this.toggleBackground = {
         backgroundColor: 'rgba(42, 76, 131)',
       };
@@ -84,6 +98,23 @@ export default {
           };
           this.toggleColor = {
             color: 'black',
+          };
+        }
+      }
+      if (window.location.pathname === '/stay') {
+        if (window.scrollY >= 500) {
+          this.toggleBackground = {
+            backgroundColor: 'rgba(42, 76, 131)',
+          };
+          this.toggleColor = {
+            color: '#fff',
+          };
+        } else if (window.scrollY < 50) {
+          this.toggleBackground = {
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+          };
+          this.toggleColor = {
+            color: '#fff',
           };
         }
       }
