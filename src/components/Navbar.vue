@@ -85,7 +85,7 @@ export default {
   },
   created() {
     this.setBurgerMenu();
-    window.addEventListener('resize', this.debounce(300, this.setBurgerMenu));
+    window.addEventListener('resize', this.setBurgerMenu);
 
     if (!this.mobile) {
       if (this.$route.path === '/') {
@@ -163,18 +163,6 @@ export default {
       if (window.innerWidth < 1100) {
         this.mobile = true;
       }
-    },
-    debounce(delay, fn) {
-      let timerId;
-      return function(...args) {
-        if (timerId) {
-          clearTimeout(timerId);
-        }
-        timerId = setTimeout(() => {
-          fn(...args);
-          timerId = null;
-        }, delay);
-      };
     },
   },
 };
