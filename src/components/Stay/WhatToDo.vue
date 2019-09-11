@@ -138,4 +138,31 @@
   text-decoration: none;
   margin: 10px auto;
 }
+
+@media only screen and (min-width: 1660px) {
+  .activities_list {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .todo {
+    justify-content: flex-start;
+    height: auto;
+  }
+  .activities_list {
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+  .activity {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .activity h3 {
+    border-bottom: 0.5px dotted rgb(30, 32, 58);
+    padding-bottom: 5px;
+    width: 50%;
+  }
+}
 </style>

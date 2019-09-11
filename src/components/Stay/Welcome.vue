@@ -35,13 +35,13 @@
     align-items: flex-start;
   }
   .mountains_banner h2 {
-    margin-top: 8%;
+    margin-top: 140px;
   }
 }
 
 @media only screen and (max-width: 1251px) {
   .mountains_banner {
-    height: 40vh;
+    height: 55vh;
     background-position: 30% center;
     background-size: fill;
     align-items: center;
@@ -49,6 +49,20 @@
 
   .mountains_banner h2 {
     font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .mountains_banner {
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+    align-items: flex-start;
+  }
+
+  .mountains_banner h2 {
+    font-size: 35px;
+    margin-top: 80px;
   }
 }
 </style>

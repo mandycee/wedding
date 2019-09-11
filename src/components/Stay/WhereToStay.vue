@@ -58,4 +58,18 @@
   padding: 10px 15px;
   text-align: center;
 }
+
+@media only screen and (max-width: 1000px) {
+  .stay {
+    justify-content: flex-start;
+    height: auto;
+  }
+  .hotels {
+    flex-flow: column;
+  }
+
+  .hotel {
+    margin-bottom: 50px;
+  }
+}
 </style>
