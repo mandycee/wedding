@@ -145,6 +145,7 @@ h3 {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  color: rgb(30, 32, 58);
 }
 
 .thumbnail div {

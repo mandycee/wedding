@@ -49,7 +49,7 @@
 
 @media only screen and (max-width: 1250px) {
   .mountains_banner {
-    height: 55vh;
+    max-height: 55vh;
     background-position: 30% center;
     background-size: fill;
     align-items: center;
@@ -57,6 +57,12 @@
 
   .mountains_banner h1 {
     font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .mountains_banner {
+    min-height: 45vh;
   }
 }
 

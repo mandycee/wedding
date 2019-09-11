@@ -239,6 +239,7 @@ a {
 
 .slide_menu .bm-burger-button .bm-burger-bars {
   border-radius: 5px;
+  background-color: rgb(30, 32, 58);
 }
 
 .slide_menu ul {

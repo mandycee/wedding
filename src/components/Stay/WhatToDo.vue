@@ -101,7 +101,8 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(42, 76, 131, 0.431);
+  background-color: rgba(109, 119, 134, 0.267);
+  /* background-color: rgba(42, 76, 131, 0.431); */
 }
 
 .activities_title {
@@ -134,7 +135,8 @@
 }
 
 .activity a {
-  color: #fff;
+  /* color: #fff; */
+  color: rgb(136, 124, 83);
   text-decoration: none;
   margin: 10px auto;
 }
@@ -167,7 +169,7 @@
   .activity h3 {
     border-bottom: 0.5px dotted rgb(30, 32, 58);
     padding-bottom: 5px;
-    width: 50%;
+    width: 60%;
   }
 }
 </style>

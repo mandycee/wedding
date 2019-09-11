@@ -18,6 +18,7 @@
   align-items: center;
   text-align: center;
   margin: 30px 0 30px 0;
+  color: rgb(30, 32, 58);
 }
 
 .story-header {
