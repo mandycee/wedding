@@ -24,7 +24,6 @@
 
 <style scoped>
 .gift {
-  height: 100vh;
   display: flex;
   flex-flow: column;
   align-items: center;
