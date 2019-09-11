@@ -26,30 +26,30 @@
 }
 
 .save-the-date h1 {
-  font-family: 'Raleway' Arial, Helvetica, sans-serif;
-  font-size: 4em;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 80px;
 }
 
 .save-the-date p {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2em;
+  font-size: 35px;
 }
 
 /* SCREENS */
-@media only screen and (max-width: 1251px) {
+@media only screen and (max-width: 1500px) {
   .save-the-date {
-    height: 40vh;
+    height: 45vh;
     background-position: right center;
     background-size: fill;
     align-items: center;
   }
 
   .save-the-date h1 {
-    font-size: 3em;
+    font-size: 60px;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
   .save-the-date {
     background-position: center;
     background-size: fill;
@@ -67,11 +67,11 @@
     padding: 20px;
   }
   .save-the-date h1 {
-    font-size: 2em;
+    font-size: 30px;
     color: #fff;
   }
   .save-the-date p {
-    font-size: 23px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 0;
   }

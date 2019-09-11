@@ -1,7 +1,7 @@
 5<template>
   <div>
     <div class="mountains_banner">
-      <h2>Welcome to Colorado</h2>
+      <h1>Welcome to Colorado</h1>
     </div>
   </div>
 </template>
@@ -23,9 +23,10 @@
   justify-content: center;
 }
 
-.mountains_banner h2 {
+.mountains_banner h1 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: #fff;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 @media only screen and (min-width: 1660px) {
@@ -34,8 +35,15 @@
     background-position: center;
     align-items: flex-start;
   }
-  .mountains_banner h2 {
+  .mountains_banner h1 {
     margin-top: 140px;
+  }
+}
+
+@media only screen and (max-width: 1659px) {
+  .mountains_banner {
+    background-position: 5% 34%;
+    background-size: fill;
   }
 }
 
@@ -47,7 +55,7 @@
     align-items: center;
   }
 
-  .mountains_banner h2 {
+  .mountains_banner h1 {
     font-size: 3em;
   }
 }
@@ -60,7 +68,7 @@
     align-items: flex-start;
   }
 
-  .mountains_banner h2 {
+  .mountains_banner h1 {
     font-size: 35px;
     margin-top: 80px;
   }
