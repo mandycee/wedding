@@ -59,7 +59,18 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
+  .stay {
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .hotel {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .stay {
     justify-content: flex-start;
     height: auto;

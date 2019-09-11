@@ -39,7 +39,7 @@
     url('../assets/gift.jpg');
   background-size: cover;
   background-position: center;
-  height: 65vh;
+  min-height: 65vh;
   width: 100%;
 
   display: flex;
@@ -60,7 +60,6 @@
 }
 
 .gift_message {
-  height: 70vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -82,7 +81,7 @@ hr {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
   .gift {
     height: auto;
   }

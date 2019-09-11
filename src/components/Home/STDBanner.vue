@@ -24,32 +24,34 @@
   background-position: top;
   color: rgb(30, 32, 58);
 }
-
 .save-the-date h1 {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  font-size: 80px;
+  font-family: 'Raleway' Arial, Helvetica, sans-serif;
+  font-size: 4em;
 }
-
 .save-the-date p {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 35px;
+  font-size: 2em;
 }
-
 /* SCREENS */
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1251px) {
   .save-the-date {
-    height: 45vh;
+    background-size: fill;
+    background-position: 50% 30%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .save-the-date {
+    height: 40vh;
     background-position: right center;
     background-size: fill;
     align-items: center;
   }
-
   .save-the-date h1 {
-    font-size: 60px;
+    font-size: 3em;
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 800px) {
   .save-the-date {
     background-position: center;
     background-size: fill;
@@ -58,7 +60,6 @@
     color: #fff;
   }
 }
-
 @media only screen and (max-width: 560px) {
   .save-the-date {
     height: 35vh;
@@ -67,11 +68,11 @@
     padding: 20px;
   }
   .save-the-date h1 {
-    font-size: 30px;
+    font-size: 2em;
     color: #fff;
   }
   .save-the-date p {
-    font-size: 20px;
+    font-size: 23px;
     color: #fff;
     margin-bottom: 0;
   }

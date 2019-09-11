@@ -145,10 +145,15 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
+  .todo {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .todo {
     justify-content: flex-start;
-    height: auto;
   }
   .activities_list {
     flex-flow: column;
