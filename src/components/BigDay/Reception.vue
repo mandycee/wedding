@@ -32,7 +32,7 @@
 }
 
 img {
-  height: 100%;
+  height: 80%;
   width: 100%;
   object-fit: cover;
   filter: grayscale(90%);

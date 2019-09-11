@@ -287,7 +287,6 @@ a {
 @media only screen and (max-width: 800px) {
   header {
     width: 50%;
-    height: 0%;
   }
 }
 </style>

@@ -30,7 +30,7 @@
 }
 
 img {
-  height: 100%;
+  height: 80%;
   width: 100%;
   object-fit: cover;
   filter: grayscale(80%);
@@ -63,6 +63,7 @@ p {
   .ceremony {
     justify-content: flex-start;
     padding-top: 0;
+    margin-top: 18px;
   }
 
   #i_do {
