@@ -92,4 +92,11 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 600px) {
+  .gallery-content {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+  }
+}
 </style>

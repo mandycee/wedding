@@ -29,10 +29,51 @@
   font-family: 'Raleway' Arial, Helvetica, sans-serif;
   font-size: 4em;
 }
+
 .save-the-date p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2em;
 }
 
 /* SCREENS */
+@media only screen and (max-width: 1251px) {
+  .save-the-date {
+    height: 40vh;
+    background-position: right center;
+    background-size: fill;
+    align-items: center;
+  }
+
+  .save-the-date h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .save-the-date {
+    background-position: center;
+    background-size: fill;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .save-the-date {
+    height: 35vh;
+    background-position: left;
+    background-size: fill;
+    padding: 20px;
+  }
+  .save-the-date h1 {
+    font-size: 2em;
+    color: #fff;
+  }
+  .save-the-date p {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 0;
+  }
+}
 </style>

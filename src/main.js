@@ -7,6 +7,7 @@ import Gift from '@/components/Gift';
 import VueRouter from 'vue-router';
 
 Vue.config.productionTip = false;
+
 Vue.use(VueRouter);
 
 const routes = [

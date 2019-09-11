@@ -254,7 +254,6 @@ a {
   padding: 5px;
 }
 
-/* Desktops and laptops ----------- */
 @media only screen and (max-width: 1300px) {
   ul {
     width: 50%;

@@ -39,4 +39,19 @@
 hr {
   width: 40px;
 }
+
+@media only screen and (max-width: 1251px) {
+  .story {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .story-header {
+    font-size: 25px;
+  }
+  .story {
+    font-size: 15px;
+  }
+}
 </style>
