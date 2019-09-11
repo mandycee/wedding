@@ -12,18 +12,18 @@
       </div>
       <div class="thumbnail">
         <div>
-          <img src="../../assets/weddingPartyImages/lefty.jpg" alt />
-        </div>
-        <p class="party_type">Bridesmaid</p>
-        <p>Stephanie</p>
-        <p>Friend of the Bride</p>
-      </div>
-      <div class="thumbnail">
-        <div>
           <img src="../../assets/weddingPartyImages/cindy.jpg" alt />
         </div>
         <p class="party_type">Bridesmaid</p>
         <p>Cindy</p>
+        <p>Friend of the Bride</p>
+      </div>
+      <div class="thumbnail">
+        <div>
+          <img src="../../assets/weddingPartyImages/liz.jpg" alt />
+        </div>
+        <p class="party_type">Bridesmaid</p>
+        <p>Elizabeth</p>
         <p>Friend of the Bride</p>
       </div>
       <div class="thumbnail">
@@ -36,10 +36,10 @@
       </div>
       <div class="thumbnail">
         <div>
-          <img src="../../assets/weddingPartyImages/liz.jpg" alt />
+          <img src="../../assets/weddingPartyImages/lefty.jpg" alt />
         </div>
         <p class="party_type">Bridesmaid</p>
-        <p>Elizabeth</p>
+        <p>Stephanie</p>
         <p>Friend of the Bride</p>
       </div>
     </div>
@@ -168,5 +168,11 @@ img {
   height: 100%;
   object-fit: cover;
   filter: grayscale(90%);
+}
+
+@media only screen and (max-width: 800px) {
+  .wedding-party {
+    width: 90%;
+  }
 }
 </style>
