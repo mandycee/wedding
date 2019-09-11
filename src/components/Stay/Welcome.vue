@@ -27,4 +27,28 @@
   color: #fff;
   font-size: 60px;
 }
+
+@media only screen and (min-width: 1660px) {
+  .mountains_banner {
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+  }
+  .mountains_banner h2 {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 1251px) {
+  .mountains_banner {
+    height: 40vh;
+    background-position: 30% center;
+    background-size: fill;
+    align-items: center;
+  }
+
+  .mountains_banner h2 {
+    font-size: 3em;
+  }
+}
 </style>

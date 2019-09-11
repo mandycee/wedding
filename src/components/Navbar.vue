@@ -229,6 +229,18 @@ a {
   align-items: flex-start;
 }
 
+.slide_menu .bm-burger-button {
+  top: 15px;
+}
+.slide_menu .bm-burger-button span {
+  height: 8px;
+  width: 8px;
+}
+
+.slide_menu .bm-burger-button .bm-burger-bars {
+  border-radius: 5px;
+}
+
 .slide_menu ul {
   display: flex;
   flex-flow: column;
@@ -269,6 +281,12 @@ a {
 @media only screen and (max-width: 1040px) {
   ul {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header {
+    width: 50%;
+    height: 0%;
   }
 }
 </style>
