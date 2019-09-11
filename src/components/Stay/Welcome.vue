@@ -8,7 +8,7 @@
 
 <style scoped>
 .mountains_banner {
-  height: 75vh;
+  min-height: 75vh;
   background-image: linear-gradient(
       0deg,
       rgba(84, 71, 202, 0.3),
@@ -40,14 +40,14 @@
   }
 }
 
-@media only screen and (max-width: 1659px) {
+@media only screen and (max-width: 1600px) {
   .mountains_banner {
     background-position: 5% 34%;
     background-size: fill;
   }
 }
 
-@media only screen and (max-width: 1251px) {
+@media only screen and (max-width: 1250px) {
   .mountains_banner {
     height: 55vh;
     background-position: 30% center;
