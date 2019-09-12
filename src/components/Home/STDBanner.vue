@@ -1,7 +1,11 @@
 <template>
   <div class="save-the-date">
     <div>
-      <h1>Soon To Be Mr. & Mrs.</h1>
+      <h1>
+        Soon To Be
+        <span>Mr.</span> &
+        <span>Mrs.</span>
+      </h1>
       <p>June 25, 2020 | The SkyView</p>
     </div>
   </div>
@@ -15,9 +19,9 @@
   justify-content: flex-end;
   align-items: center;
   background-image: linear-gradient(
-      to bottom,
-      rgba(216, 209, 187, 0.52),
-      rgba(42, 76, 131, 0.431)
+      45deg,
+      rgba(30, 32, 58, 0.431),
+      rgba(212, 190, 118, 0.52)
     ),
     url('../../assets/us.jpg');
   background-size: cover;
@@ -25,29 +29,44 @@
   color: rgb(30, 32, 58);
 }
 .save-the-date h1 {
-  font-family: 'Raleway' Arial, Helvetica, sans-serif;
-  font-size: 4em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+}
+
+span {
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 rgb(30, 32, 58), 1px -1px 0 rgb(189, 179, 146),
+    -1px 1px 0 rgb(189, 179, 146), 1px 1px 0 rgb(189, 179, 146);
 }
 .save-the-date p {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2em;
+  font-size: 32px;
 }
 /* SCREENS */
-@media only screen and (max-width: 1251px) {
+@media only screen and (max-width: 1260px) {
   .save-the-date {
     background-size: fill;
     background-position: 50% 30%;
   }
+  .save-the-date h1 {
+    font-size: 55px;
+  }
+  .save-the-date p {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 1050px) {
   .save-the-date {
-    height: 40vh;
-    background-position: right center;
+    height: 55vh;
+    background-position: 35% 25%;
     background-size: fill;
     align-items: center;
   }
   .save-the-date h1 {
-    font-size: 3em;
+    font-size: 48px;
+  }
+  .save-the-date p {
+    font-size: 28px;
   }
 }
 

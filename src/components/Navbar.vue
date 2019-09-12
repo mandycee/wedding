@@ -12,7 +12,7 @@
           <router-link to="/" v-bind:style="toggleColor">Amanda & Miguel</router-link>
         </li>
         <li>
-          <router-link to="/stay" v-bind:style="toggleColor">Accommodation</router-link>
+          <router-link to="/stay" v-bind:style="toggleColor">Accommodations</router-link>
         </li>
         <li>
           <router-link to="/gift" v-bind:style="toggleColor">Gifts</router-link>
@@ -58,19 +58,12 @@ export default {
   watch: {
     $route() {
       if (!this.mobile) {
-        if (this.$route.path === '/') {
+        if (this.$route.path === '/' || this.$route.path === '/stay') {
           this.toggleBackground = {
             backgroundColor: 'rgba(255, 255, 255, 0)',
           };
           this.toggleColor = {
             color: 'rgb(30, 32, 58)',
-          };
-        } else if (this.$route.path === '/stay') {
-          this.toggleBackground = {
-            backgroundColor: 'rgba(255, 255, 255, 0)',
-          };
-          this.toggleColor = {
-            color: '#fff',
           };
         } else {
           this.toggleBackground = {
@@ -88,19 +81,12 @@ export default {
     window.addEventListener('resize', this.setBurgerMenu);
 
     if (!this.mobile) {
-      if (this.$route.path === '/') {
+      if (this.$route.path === '/' || this.$route.path === '/stay') {
         this.toggleBackground = {
           backgroundColor: 'rgba(255, 255, 255, 0)',
         };
         this.toggleColor = {
           color: 'rgb(30, 32, 58)',
-        };
-      } else if (this.$route.path === '/stay') {
-        this.toggleBackground = {
-          backgroundColor: 'rgba(255, 255, 255, 0)',
-        };
-        this.toggleColor = {
-          color: '#fff',
         };
       } else {
         this.toggleBackground = {
@@ -120,7 +106,11 @@ export default {
   },
   methods: {
     onScroll() {
-      if (window.location.pathname === '/' && !this.mobile) {
+      if (
+        (window.location.pathname === '/' ||
+          window.location.pathname === '/stay') &&
+        !this.mobile
+      ) {
         if (window.scrollY >= 500) {
           this.toggleBackground = {
             backgroundColor: 'rgb(30, 32, 58)',
@@ -138,23 +128,6 @@ export default {
           };
         }
       }
-      if (window.location.pathname === '/stay' && !this.mobile) {
-        if (window.scrollY >= 50) {
-          this.toggleBackground = {
-            backgroundColor: 'rgb(30, 32, 58)',
-          };
-          this.toggleColor = {
-            color: '#fff',
-          };
-        } else if (window.scrollY < 50) {
-          this.toggleBackground = {
-            backgroundColor: 'rgba(255, 255, 255, 0)',
-          };
-          this.toggleColor = {
-            color: '#fff',
-          };
-        }
-      }
     },
     setBurgerMenu() {
       if (window.innerWidth >= 1100) {
@@ -168,7 +141,7 @@ export default {
 };
 </script>
 
-<style>
+<style >
 header {
   position: fixed;
   top: 0;
@@ -204,6 +177,10 @@ li {
   flex: 1 3;
 }
 
+/* li:hover {
+  color: rgb(136, 124, 83);
+  font-size: 25px;
+} */
 a {
   text-decoration: none;
 }
@@ -282,11 +259,6 @@ a {
 @media only screen and (max-width: 1040px) {
   ul {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  header {
-    width: 50%;
   }
 }
 </style>

@@ -121,6 +121,7 @@
 }
 
 h3 {
+  font-family: 'Dancing Script', cursive;
   align-self: flex-start;
   font-size: 30px;
 }

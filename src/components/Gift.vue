@@ -32,9 +32,12 @@
 
 .gift_banner {
   background-image: linear-gradient(
-      to bottom,
-      rgba(216, 209, 187, 0.52),
-      rgba(207, 207, 207, 0.431)
+      -35deg,
+      /* to bottom, */
+        /* rgba(216, 209, 187, 0.52),
+      rgba(207, 207, 207, 0.431) */
+        rgba(30, 32, 58, 0.431),
+      rgba(212, 190, 118, 0.52)
     ),
     url('../assets/gift.jpg');
   background-size: cover;
@@ -49,14 +52,14 @@
 }
 
 .gift_banner h1 {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: 'Dancing Script', cursive;
   margin-top: 90px;
-  font-size: 80px;
+  font-size: 64px;
   letter-spacing: 5px;
 }
 .gift_banner p {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .gift_message {
@@ -64,8 +67,9 @@
   flex-flow: column;
   justify-content: center;
   text-align: center;
-  width: 75%;
-  font-size: 30px;
+  width: 50%;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 hr {
@@ -99,6 +103,7 @@ hr {
   .gift_message {
     font-size: 20px;
     height: 50vh;
+    width: 75%;
   }
 }
 
@@ -118,6 +123,7 @@ hr {
 
   .gift_message {
     font-size: 15px;
+    width: 100%;
   }
 }
 </style>

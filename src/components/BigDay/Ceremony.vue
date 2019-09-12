@@ -23,7 +23,7 @@
 }
 
 #i_do {
-  height: 350px;
+  height: 380px;
   width: 450px;
   display: flex;
   align-items: center;
@@ -37,6 +37,7 @@ img {
 }
 
 h3 {
+  font-family: 'Dancing Script', cursive;
   font-size: 40px;
   font-weight: 500;
   margin: 25px 0 25px 0;

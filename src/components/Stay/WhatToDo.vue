@@ -12,55 +12,66 @@
         <!-- BRUNCH -->
         <div class="activity_items">
           <h4>Brunch</h4>
-          <router-link
+          <a
             class="restaurant_link"
-            to="http://clairesrestaurantandbar.com/"
-          >Claire's Restaurant & Bar</router-link>
-          <router-link
+            target="_blank"
+            href="http://clairesrestaurantandbar.com/"
+          >Claire's Restaurant & Bar</a>
+          <a
             class="restaurant_link"
-            to="http://www.thenotchtop.com/"
-          >Notchtop Bakery & Cafe</router-link>
+            target="_blank"
+            href="http://www.thenotchtop.com/"
+          >Notchtop Bakery & Cafe</a>
         </div>
 
         <!-- Lunch -->
         <div class="activity_items">
           <h4>Cravings</h4>
-          <router-link
+          <a
             class="restaurant_link"
-            to="http://www.grubsteakestespark.com/lunch.html"
-          >The Grubsteak</router-link>
-          <router-link class="restaurant_link" to="https://www.edscantina.com/">Ed's Cantina</router-link>
+            target="_blank"
+            href="http://www.grubsteakestespark.com/lunch.html"
+          >The Grubsteak</a>
+          <a class="restaurant_link" target="_blank" href="https://www.edscantina.com/">Ed's Cantina</a>
         </div>
 
         <!-- Dinner -->
         <div class="activity_items">
           <h4>Sit Down</h4>
-          <router-link class="restaurant_link" to="https://mamarosesrestaurant.com/">Mama Rose's</router-link>
-          <router-link
+          <a
             class="restaurant_link"
-            to="https://www.stanleyhotel.com/cascades-restaurant-lounge.html"
-          >Cascades Restaurant & Lounge</router-link>
-          <router-link class="restaurant_link" to="http://www.theviewestes.com/">The View</router-link>
+            target="_blank"
+            href="https://mamarosesrestaurant.com/"
+          >Mama Rose's</a>
+          <a
+            class="restaurant_link"
+            target="_blank"
+            href="https://www.stanleyhotel.com/cascades-restaurant-lounge.html"
+          >Cascades Restaurant & Lounge</a>
+          <a class="restaurant_link" target="_blank" href="http://www.theviewestes.com/">The View</a>
         </div>
       </div>
-
       <!-- ================= PLAY ================ -->
       <div class="activity">
         <h3>Play</h3>
         <div class="activity_items">
           <h4>Adventure Seeking</h4>
-          <router-link to="https://www.openairadventurepark.com/">Open Air Adventure Park</router-link>
-          <router-link to="https://www.newventurecycling.com/">New Venture Cycling</router-link>
-          <router-link to="https://rapidtransitrafting.com/book-online-now">Rapid Transit Rafting</router-link>
-          <router-link to="https://backbonecycles.com/">Ride ATVs</router-link>
+          <a target="_blank" href="https://www.openairadventurepark.com/">Open Air Adventure Park</a>
+          <a target="_blank" href="https://www.newventurecycling.com/">New Venture Cycling</a>
+          <a
+            target="_blank"
+            href="https://rapidtransitrafting.com/book-online-now"
+          >Rapid Transit Rafting</a>
+          <a target="_blank" href="https://backbonecycles.com/">Ride ATVs</a>
         </div>
         <div class="activity_items">
           <h4>Family Fun</h4>
-          <router-link to="https://www.colorado.gov/pacific/evrpd/marina">Lake Estes Marina</router-link>
-          <router-link
-            to="https://www.colorado.gov/pacific/evrpd/fees-hours-and-rentals"
-          >Boat Rentals</router-link>
-          <router-link to="https://www.funcityofestes.com/">Fun City of Estes</router-link>
+          <a target="_blank" href="https://www.colorado.gov/pacific/evrpd/marina">Lake Estes Marina</a>
+          <a
+            target="_blank"
+            href="https://www.colorado.gov/pacific/evrpd/fees-hours-and-rentals"
+          >Boat Rentals</a>
+          <a target="_blank" href="https://www.funcityofestes.com/">Fun City of Estes</a>
         </div>
       </div>
 
@@ -70,22 +81,24 @@
 
         <div class="activity_items">
           <h4>Hiking</h4>
-          <router-link
-            to="https://www.nps.gov/romo/planyourvisit/index.htm"
-          >Rocky Mountain National Park</router-link>
-          <router-link
-            to="https://fullsuitcase.com/rocky-mountain-national-park-itinerary/"
-          >Plan Your Trip To RMNP</router-link>
+          <a
+            target="_blank"
+            href="https://www.nps.gov/romo/planyourvisit/index.htm"
+          >Rocky Mountain National Park</a>
+          <a
+            target="_blank"
+            href="https://fullsuitcase.com/rocky-mountain-national-park-itinerary/"
+          >Plan Your Trip To RMNP</a>
         </div>
 
         <div class="activity_items">
           <h4>Sight-Seeing</h4>
-          <router-link to="https://www.estestram.com/">Estes Park Ariel Tramway</router-link>
+          <a target="_blank" href="https://www.estestram.com/">Estes Park Ariel Tramway</a>
         </div>
 
         <div class="activity_items">
           <h4>Tours</h4>
-          <router-link to="https://www.stanleyhotel.com/tours.html">The Stanely Hotel Tour</router-link>
+          <a target="_blank" href="https://www.stanleyhotel.com/tours.html">The Stanely Hotel Tour</a>
         </div>
       </div>
     </div>
@@ -96,16 +109,16 @@
 
 <style scoped>
 .todo {
-  height: 100vh;
+  padding: 40px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(109, 119, 134, 0.267);
-  /* background-color: rgba(42, 76, 131, 0.431); */
+  background-color: #f6f6f6;
 }
 
 .activities_title {
+  font-family: 'Dancing Script', cursive;
   font-size: 20px;
   letter-spacing: 5px;
 }
@@ -115,6 +128,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-weight: 400;
 }
 
 .activity {
@@ -131,11 +145,10 @@
 }
 
 .activity h3 {
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 .activity a {
-  /* color: #fff; */
   color: rgb(136, 124, 83);
   text-decoration: none;
   margin: 10px auto;

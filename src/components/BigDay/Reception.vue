@@ -2,7 +2,7 @@
   <div class="reception">
     <div class="details">
       <h3>The Reception</h3>
-      <p class="time">6:00pm</p>
+      <p class="time">6:00pm - 11:00pm</p>
       <p>The SkyView Hall</p>
       <p>278 Sunny Acres Ct</p>
       <p>Estes Park, CO 80517</p>
@@ -21,11 +21,11 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: rgba(109, 119, 134, 0.267);
+  background-color: rgb(216, 209, 187);
 }
 
 #the_hall {
-  height: 350px;
+  height: 380px;
   width: 450px;
   display: flex;
   align-items: center;
@@ -38,6 +38,7 @@ img {
   filter: grayscale(90%);
 }
 h3 {
+  font-family: 'Dancing Script', cursive;
   font-size: 40px;
   font-weight: 500;
   margin: 25px 0 25px 0;
