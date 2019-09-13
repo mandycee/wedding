@@ -1,7 +1,7 @@
 <template>
   <div class="todo">
     <div class="activities_title">
-      <h2>What To Do</h2>
+      <h2>What to Do</h2>
     </div>
 
     <!-- ============================ ACTIVITIES ========================= -->
@@ -120,7 +120,6 @@
 .activities_title {
   font-family: 'Dancing Script', cursive;
   font-size: 20px;
-  letter-spacing: 5px;
 }
 
 .activities_list {
@@ -144,17 +143,29 @@
   flex-flow: column;
 }
 
+.activity:nth-child(2) {
+  border-right: 0.5px solid #c2c1c1;
+  border-left: 0.5px solid #c2c1c1;
+}
+
 .activity h3 {
   letter-spacing: 5px;
+  border-bottom: 0.5px dotted rgb(30, 32, 58);
+  padding-bottom: 32px;
+  width: 40%;
 }
 
 .activity a {
   color: rgb(136, 124, 83);
   text-decoration: none;
-  margin: 10px auto;
+  margin: 2.5px auto;
 }
 
-@media only screen and (min-width: 1660px) {
+.activity a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1690px) {
   .activities_list {
     width: 50%;
   }
@@ -178,10 +189,7 @@
     width: 100%;
     margin-bottom: 25px;
   }
-
   .activity h3 {
-    border-bottom: 0.5px dotted rgb(30, 32, 58);
-    padding-bottom: 5px;
     width: 60%;
   }
 }

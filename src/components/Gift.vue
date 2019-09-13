@@ -1,8 +1,10 @@
 <template>
   <div class="gift">
     <div class="gift_banner">
-      <h1>Gifts</h1>
-      <p>Contribute to Our Honeymoon Fund</p>
+      <div class="banner">
+        <h1>Gifts</h1>
+        <p>Contribute to Our Honeymoon Fund</p>
+      </div>
     </div>
     <div class="gift_message">
       <p>Your love, laughter, and company on our big day is the greatest gift of all. We're skipping out of tradition and would love for you to help us create some new experiences instead. Please choose a gift from our honeymoon registry below.</p>
@@ -29,21 +31,22 @@
   align-items: center;
   justify-content: center;
 }
-
 .gift_banner {
+  height: 75vh;
+  width: 100%;
+}
+
+.banner {
   background-image: linear-gradient(
       -40deg,
-      /* to bottom, */
-        /* rgba(216, 209, 187, 0.52),
-      rgba(207, 207, 207, 0.431) */
-        rgba(30, 32, 58, 0.431),
+      rgba(30, 32, 58, 0.431),
       rgba(241, 232, 203, 0.315),
       rgba(212, 190, 118, 0.52)
     ),
     url('../assets/gift.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 65vh;
+  height: 100%;
   width: 100%;
 
   display: flex;
@@ -52,13 +55,13 @@
   justify-content: center;
 }
 
-.gift_banner h1 {
+.banner h1 {
   font-family: 'Dancing Script', cursive;
   margin-top: 90px;
   font-size: 64px;
   letter-spacing: 5px;
 }
-.gift_banner p {
+.banner p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 32px;
 }
@@ -71,6 +74,8 @@
   width: 50%;
   font-size: 24px;
   font-weight: 300;
+  line-height: 35px;
+  height: 55vh;
 }
 
 hr {
@@ -87,44 +92,42 @@ hr {
 }
 
 @media only screen and (max-width: 1250px) {
-  .gift {
-    height: auto;
-  }
-  .gift_banner {
-    height: 50vh;
-  }
-  .gift_banner h1 {
+  .banner h1 {
     font-size: 60px;
   }
 
-  .gift_banner p {
+  .banner p {
     font-size: 25px;
   }
 
   .gift_message {
     font-size: 20px;
-    height: 50vh;
-    width: 75%;
+    width: 80%;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .gift {
-    height: auto;
-    justify-content: flex-start;
+@media only screen and (max-width: 1050px) {
+  .gift_banner {
+    height: 575px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .gift_banner {
+    height: 315px;
   }
 
-  .gift_banner h1 {
+  .banner h1 {
+    margin-top: 0;
     font-size: 40px;
   }
 
-  .gift_banner p {
+  .banner p {
     font-size: 18px;
   }
 
   .gift_message {
     font-size: 15px;
-    width: 100%;
   }
 }
 </style>

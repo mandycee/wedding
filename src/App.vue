@@ -23,8 +23,11 @@ export default {
 html,
 body {
   margin: 0 auto;
+  min-height: 100%;
 }
+
 #app {
+  flex: 1 0 auto;
   font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

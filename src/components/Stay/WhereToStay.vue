@@ -1,6 +1,6 @@
 <template>
   <div class="stay">
-    <h2 class="estes-park">Where To Stay</h2>
+    <h2 class="estes-park">Where to Stay</h2>
 
     <div class="hotels">
       <div class="hotel">
@@ -40,7 +40,7 @@
 .estes-park {
   font-family: 'Dancing Script', cursive;
   font-size: 30px;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
 }
 
 .hotels {
@@ -50,16 +50,25 @@
 }
 
 .hotel {
-  margin: 0 50px;
+  margin: 0 40px;
 }
 
 .hotel > p:nth-child(1) {
   font-weight: 700;
   letter-spacing: 5px;
+  color: rgb(136, 124, 83);
+}
+
+.hotel > p:nth-child(2) {
+  margin-bottom: 18px;
 }
 
 .address {
   margin-bottom: 40px;
+}
+
+.address p {
+  line-height: 2.5px;
 }
 
 .hotel a {

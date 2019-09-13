@@ -23,10 +23,10 @@
 
 .story-header {
   font-size: 3em;
-  /* TODO: CHANGE FONT */
   font-family: 'Dancing Script', cursive;
   letter-spacing: 5px;
   font-weight: 100;
+  margin-bottom: 10px;
 }
 
 .story {
@@ -36,6 +36,7 @@
   line-height: 35px;
   letter-spacing: 2px;
   font-weight: 100;
+  margin-top: 15px;
 }
 
 hr {

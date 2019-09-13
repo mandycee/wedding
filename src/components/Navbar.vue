@@ -177,10 +177,6 @@ li {
   flex: 1 3;
 }
 
-/* li:hover {
-  color: rgb(136, 124, 83);
-  font-size: 25px;
-} */
 a {
   text-decoration: none;
 }

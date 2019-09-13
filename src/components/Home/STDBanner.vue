@@ -2,7 +2,7 @@
   <div class="save-the-date">
     <div>
       <h1>
-        Soon To Be
+        Soon to Be
         <span>Mr.</span> &
         <span>Mrs.</span>
       </h1>
