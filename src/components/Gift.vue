@@ -32,11 +32,12 @@
 
 .gift_banner {
   background-image: linear-gradient(
-      -35deg,
+      -40deg,
       /* to bottom, */
         /* rgba(216, 209, 187, 0.52),
       rgba(207, 207, 207, 0.431) */
         rgba(30, 32, 58, 0.431),
+      rgba(241, 232, 203, 0.315),
       rgba(212, 190, 118, 0.52)
     ),
     url('../assets/gift.jpg');

@@ -24,7 +24,7 @@
     </div>
     <h4>
       **Note that it is approximately a
-      <span>2 hour drive</span> from Denver International Airport to Estes Park and it would be adviced to rent a car.
+      <span>2 hour drive</span> from Denver International Airport to Estes Park and it would be advised to rent a car.
     </h4>
   </div>
 </template>
