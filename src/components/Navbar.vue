@@ -200,6 +200,7 @@ a {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 245px;
 }
 
 .slide_menu .bm-burger-button {

@@ -104,6 +104,7 @@ span {
     justify-content: flex-start;
   }
   .hotels {
+    align-items: center;
     flex-flow: column;
   }
 
