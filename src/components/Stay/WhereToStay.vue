@@ -23,7 +23,9 @@
       </div>
     </div>
     <h4>
-      **Note that it is approximately a
+      <p id="attention">
+        <span id="attention-text">ATTENTION</span> if you plan to stay at Fall River Village; Once you have booked, please call the resort so they can apply a 5% lodging discount. You can call at (970)325-6864 between 9am to 6pm MST
+      </p>**Note that it is approximately a
       <span>2 hour drive</span> from Denver International Airport to Estes Park and it would be advised to rent a car.
     </h4>
   </div>
@@ -86,6 +88,13 @@ h4 {
   margin-top: 55px;
   font-weight: 300;
   width: 30%;
+}
+#attention {
+  color: red;
+}
+
+#attention-text {
+  font-weight: bold;
 }
 
 span {
