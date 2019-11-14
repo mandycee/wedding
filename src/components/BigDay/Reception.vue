@@ -2,10 +2,11 @@
   <div class="reception">
     <div class="details">
       <h3>The Reception</h3>
-      <p class="time">6:00pm - 11:00pm</p>
+      <p class="time">5:00pm - 10:00pm</p>
       <p>The SkyView Hall</p>
       <p>278 Sunny Acres Ct</p>
       <p>Estes Park, CO 80517</p>
+      <p>Dress Code: Semi-formal</p>
     </div>
     <div id="the_hall">
       <img src="../../assets/skyview.jpg" alt />
