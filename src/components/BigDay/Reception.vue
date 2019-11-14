@@ -6,7 +6,7 @@
       <p>The SkyView Hall</p>
       <p>278 Sunny Acres Ct</p>
       <p>Estes Park, CO 80517</p>
-      <p>Dress Code: Semi-formal</p>
+      <p>Dress Code: Formal/Semi-Formal</p>
     </div>
     <div id="the_hall">
       <img src="../../assets/skyview.jpg" alt />
