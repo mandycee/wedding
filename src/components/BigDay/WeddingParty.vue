@@ -34,14 +34,6 @@
         <p>Patricia</p>
         <p>Friend of the Bride</p>
       </div>
-      <div class="thumbnail">
-        <div>
-          <img src="../../assets/weddingPartyImages/lefty.jpg" alt />
-        </div>
-        <p class="party_type">Bridesmaid</p>
-        <p>Stephanie</p>
-        <p>Friend of the Bride</p>
-      </div>
     </div>
 
     <h3>His</h3>
@@ -81,14 +73,6 @@
         <p class="party_type">Flower Girl</p>
         <p>Olivia</p>
         <p>Cousin of the Bride</p>
-      </div>
-      <div class="thumbnail">
-        <div>
-          <img src="../../assets/weddingPartyImages/violet.jpg" alt />
-        </div>
-        <p class="party_type">Flower Girl</p>
-        <p>Violet</p>
-        <p>Niece of the Bride</p>
       </div>
       <div class="thumbnail">
         <div>
@@ -135,7 +119,7 @@ h3 {
 
 .thumbnail {
   margin: 10px;
-  width: 300px;
+  width: 250px;
   height: 400px;
   background: linear-gradient(
     to bottom,
@@ -151,7 +135,7 @@ h3 {
 
 .thumbnail div {
   margin: 5px;
-  width: 260px;
+  width: 220px;
   height: 290px;
 }
 
